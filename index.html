@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Olusoji Adenekan's Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="vendor/" rel="stylesheet">
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    body { background-color: #fff; }
+    header { background: #f8f9fa; }
+    .nav-menu ul { list-style: none; padding-left: 0; }
+    .nav-menu a { color: #5c5c5c; text-decoration: none; }
+    .nav-link.active { color: #007bff; }
+    .profile img { max-width: 120px; }
+    section { padding: 60px 0; }
+
+    #hero {
+      background: url('img/mh.jpeg') top center;
+      background-size: cover;
+      position: relative;
+      padding: 60px 0;
+    }
+    
+    .icon-box img {
+      width: 50px; /* Adjust the size as needed */
+      height: 50px; /* Adjust the size as needed */
+    }
+    
+    #projects {
+      background-color: #f4f4f4; /* Set your desired background color here */
+    }
+
+    /* Skills Section */
+    .skills .icon-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .skills .icon-box img {
+      margin-right: 15px;
+    }
+
+    .skills .icon-box h4 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .skills .skills-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .skills .skills-content .icon-box {
+      flex: 1 1 calc(33.333% - 20px); /* 3 items per row with 20px gap */
+    }
+
+    @media (max-width: 768px) {
+      .skills .skills-content .icon-box {
+        flex: 1 1 calc(50% - 20px); /* 2 items per row on tablets */
+      }
+    }
+
+    @media (max-width: 576px) {
+      .skills .skills-content .icon-box {
+        flex: 1 1 100%; /* 1 item per row on mobile */
+      }
+    }
+
+    /* Projects Section */
+    .projects .work-item {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Mobile nav toggle button -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="img/myimage.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Olusoji Adenekan</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://twitter.com/Id_soji" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/olusoji.adenekan.94/" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="mailto:adenekanolusoji@gmail.com" class="Email"><i class="bx bxl-gmail"></i></a>
+          <a href="https://www.linkedin.com/in/olusoji-adenekan-a28bb2234/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Skills</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Olusoji Adenekan</h1>
+      <p>I'm <span class="typed" data-typed-items="a Data Analyst, a Data Scientist, a Research Analyst, a Problem Solver"></span></p>
+    </div>
+  </section>
+
+  <!-- Main content -->
+  <main id="main">
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I specialize in statistical analysis, data visualization, and machine learning. With a strong foundation in mathematics and economics, I leverage various analytical tools to enhance decision-making and business strategy.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Proficient in SQL, Python, IBM SPSS, R, Tableau, and Power BI. Experienced with big data platforms such as Hadoop and Spark. Strong understanding of predictive modeling, regression analysis, and clustering techniques.</p>
+        </div>
+        <div class="skills-content">
+          <div class="icon-box" data-aos="fade-up">
+            <div class="icon"><img src="img/sql.webp" alt="SQL"></div>
+            <h4 class="title">SQL</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><img src="img/python.png" alt="Python"></div>
+            <h4 class="title">Python</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><img src="img/Spss.png" alt="IBM SPSS"></div>
+            <h4 class="title">IBM SPSS</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><img src="img/r.png" alt="R"></div>
+            <h4 class="title">R</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><img src="img/power.png" alt="Power BI"></div>
+            <h4 class="title">Power BI</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="800">
+            <div class="icon"><img src="img/stata.png" alt="STATA"></div>
+            <h4 class="title">STATA</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="900">
+            <div class="icon"><img src="img/webs.png" alt="Web Scraping"></div>
+            <h4 class="title">Web Scraping</h4>
+          </div>
+          <div class="icon-box" data-aos="fade-up" data-aos-delay="1000">
+            <div class="icon"><img src="img/excel.webp" alt="Microsoft Excel"></div>
+            <h4 class="title">Microsoft Excel</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Projects</h2>
+          <p>These are some of my most interesting projects including data cleaning and transformation.</p>
+        </div>
+        <div class="row">
+          <div class="col-12 work-item">
+            <a href="https://github.com/data-science-fall-2023/final-project-recipe-shiny-app/blob/main/dataviz.R" class="image fit thumb"><img src="images/thumbs/bbc.png" alt="" /></a>
+            <h3>BBC Goodfood recipes Dashboard</h3>
+            <p>This project analyzed BBC Goodfood recipes, scraping data for different food types like Quick & Easy, Vegan, and Vegetarian. The data was cleaned with tidyverse, and attributes like preparation time, rating, servings, and nutrition were examined. Linear and random forest regression models were created using tidymodels to predict preparation time based on various inputs.
+
+              
+              Key R libraries used: Rvest, Shiny, Shinycssloaders, Tidyverse, Tidymodels, ggdist, bs4Dash, and tidyquant.</p>
+          </div>
+          <div class="col-12 work-item">
+            <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
+            <h3>Market Basket Analysis</h3>
+            <p>Implemented a machine learning model to analyze customer purchasing patterns, significantly improving cross-selling strategies.</p>
+          </div>
+        </div>
+        <ul class="actions">
+          <li><a href="projects.html" class="button">View All Projects</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Olusoji Adenekan</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by <a href="#">Olusoji Adenekan</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="purecounter/purecounter_vanilla.js"></script>
+  <script src="aos/aos.js"></script>
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="glightbox/js/glightbox.min.js"></script>
+  <script src="isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="swiper/swiper-bundle.min.js"></script>
+  <script src="typed.js/typed.umd.js"></script>
+  <script src="waypoints/noframework.waypoints.js"></script>
+  <script src="php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
