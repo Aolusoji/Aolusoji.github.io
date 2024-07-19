@@ -87,7 +87,25 @@
 
     /* Projects Section */
     .projects .work-item {
-      margin-bottom: 30px;
+      flex: 1 1 45%; /* Adjust the flex-basis value as needed */
+      display: flex;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    .projects .row {
+      display: flex;
+      flex-wrap: nowrap; /* Prevent wrapping */
+      overflow-x: auto; /* Allow horizontal scrolling */
+    }
+
+    .projects .row::-webkit-scrollbar {
+      display: none; /* Hide scrollbar for WebKit browsers */
+    }
+
+    .projects .row {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
     }
   </style>
 </head>
@@ -136,7 +154,7 @@
       <div class="container">
         <div class="section-title">
           <h2>About</h2>
-          <p>I specialize in statistical analysis, data visualization, and machine learning. With a strong foundation in mathematics and economics, I leverage various analytical tools to enhance decision-making and business strategy.</p>
+          <p>I specialize in Statistical analysis, Data visualization, Data Analystics and Economic analysis. With a strong foundation in Economics and Quantitative Methods, I leverage various analytical tools to enhance decision-making and business strategy.</p>
         </div>
       </div>
     </section>
@@ -146,7 +164,7 @@
       <div class="container">
         <div class="section-title">
           <h2>Skills</h2>
-          <p>Proficient in SQL, Python, IBM SPSS, R, Tableau, and Power BI. Experienced with big data platforms such as Hadoop and Spark. Strong understanding of predictive modeling, regression analysis, and clustering techniques.</p>
+          <p>Proficient in SQL, Python, IBM SPSS, R, Tableau, and Power BI. Adept at predictive modeling, regression analysis, multilevel analysis, and clustering techniques.</p>
         </div>
         <div class="skills-content">
           <div class="icon-box" data-aos="fade-up">
@@ -193,17 +211,16 @@
           <p>These are some of my most interesting projects including data cleaning and transformation.</p>
         </div>
         <div class="row">
-          <div class="col-12 work-item">
-            <a href="https://github.com/data-science-fall-2023/final-project-recipe-shiny-app/blob/main/dataviz.R" class="image fit thumb"><img src="images/thumbs/bbc.png" alt="" /></a>
+          <div class="work-item">
+            <a href="https://github.com/data-science-fall-2023/final-project-recipe-shiny-app/blob/main/dataviz.R" class="image fit thumb"><img src="images/thumbs/bbc.png" alt="BBC Goodfood recipes Dashboard" /></a>
             <h3>BBC Goodfood recipes Dashboard</h3>
             <p>This project analyzed BBC Goodfood recipes, scraping data for different food types like Quick & Easy, Vegan, and Vegetarian. The data was cleaned with tidyverse, and attributes like preparation time, rating, servings, and nutrition were examined. Linear and random forest regression models were created using tidymodels to predict preparation time based on various inputs.
-
               
               Key R libraries used: Rvest, Shiny, Shinycssloaders, Tidyverse, Tidymodels, ggdist, bs4Dash, and tidyquant.</p>
           </div>
-          <div class="col-12 work-item">
-            <a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-            <h3>Market Basket Analysis</h3>
+          <div class="work-item">
+            <a href="https://app.powerbi.com/groups/me/reports/35af2ac2-6939-4e43-9b42-33e84547ca3e/966027d83c6cc50e878b?experience=power-bi" class="image fit thumb"><img src="img/imgy.png" alt="Netflix Analysis" /></a>
+            <h3>Netflix analysis</h3>
             <p>Implemented a machine learning model to analyze customer purchasing patterns, significantly improving cross-selling strategies.</p>
           </div>
         </div>
