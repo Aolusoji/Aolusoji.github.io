@@ -8,7 +8,7 @@
   <meta content="" name="keywords">
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
   <link href="vendor/" rel="stylesheet">
   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -36,8 +36,9 @@
       width: 50px; /* Adjust the size as needed */
       height: 50px; /* Adjust the size as needed */
     }
-    
-    #projects {
+
+    /* Common background color for About, Skills, and Projects sections */
+    .common-bg {
       background-color: #f4f4f4; /* Set your desired background color here */
     }
 
@@ -108,6 +109,16 @@
       scrollbar-width: none;  /* Firefox */
     }
   </style>
+  <script>
+    function showMoreProjects() {
+      var moreProjects = document.getElementById("more-projects");
+      if (moreProjects.style.display === "none" || moreProjects.style.display === "") {
+        moreProjects.style.display = "block";
+      } else {
+        moreProjects.style.display = "none";
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -150,7 +161,7 @@
   <!-- Main content -->
   <main id="main">
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about common-bg">
       <div class="container">
         <div class="section-title">
           <h2>About</h2>
@@ -160,7 +171,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="skills common-bg">
       <div class="container">
         <div class="section-title">
           <h2>Skills</h2>
@@ -204,7 +215,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects common-bg">
       <div class="container">
         <div class="section-title">
           <h2>Projects</h2>
@@ -218,15 +229,18 @@
               
               Key R libraries used: Rvest, Shiny, Shinycssloaders, Tidyverse, Tidymodels, ggdist, bs4Dash, and tidyquant.</p>
           </div>
+        </div>
+        <ul class="actions">
+          <li><a href="#" class="button" onclick="showMoreProjects()">View All Projects</a></li>
+        </ul>
+        <!-- Hidden section for more projects -->
+        <div id="more-projects" style="display: none;">
           <div class="work-item">
             <a href="https://app.powerbi.com/groups/me/reports/35af2ac2-6939-4e43-9b42-33e84547ca3e/966027d83c6cc50e878b?experience=power-bi" class="image fit thumb"><img src="img/imgy.png" alt="Netflix Analysis" /></a>
             <h3>Netflix analysis</h3>
             <p>Implemented a machine learning model to analyze customer purchasing patterns, significantly improving cross-selling strategies.</p>
           </div>
         </div>
-        <ul class="actions">
-          <li><a href="projects.html" class="button">View All Projects</a></li>
-        </ul>
       </div>
     </section>
   </main>
